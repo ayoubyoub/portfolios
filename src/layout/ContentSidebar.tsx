@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Context from "../context/context";
 const ContentSidebar = () => {
-  const { sidebar, changeSideBar } = useContext(Context);
+  const { sidebar, changeSideBar }: any = useContext(Context);
 
   return (
     <div>

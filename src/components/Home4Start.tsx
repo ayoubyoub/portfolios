@@ -5,7 +5,7 @@ import SocialIcon from "./SocialIcon";
 import TypingAnimation from "./TypingAnimation";
 const Home4Start = () => {
   const [menu, setMenu] = useState(false);
-  const { changeNav, nav, changeSideBar } = useContext(Context);
+  const { changeNav, nav, changeSideBar }: any = useContext(Context);
   return (
     <div>
       <Head>

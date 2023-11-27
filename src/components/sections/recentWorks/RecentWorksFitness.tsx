@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const RecentWorksFitness = () => {
   // Isotope
-  const isotope = useRef();
+  const isotope: any = useRef();
   const [filterKey, setFilterKey] = useState("*");
   useEffect(() => {
     setTimeout(() => {

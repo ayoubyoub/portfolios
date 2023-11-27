@@ -2,7 +2,7 @@ import Isotope from "isotope-layout";
 import React, { useEffect, useRef, useState } from "react";
 const RecentWorksDefault = () => {
   // Isotope
-  const isotope = useRef();
+  const isotope: any = useRef();
   const [filterKey, setFilterKey] = useState("*");
   useEffect(() => {
     setTimeout(() => {

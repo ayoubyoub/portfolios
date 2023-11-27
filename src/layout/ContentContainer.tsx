@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import BlogPostNew, { BlogPostClassic } from "../components/BlogPost";
 import Context from "../context/context";
 const ContentContainer = ({ children, blog }: any) => {
-  const { nav } = useContext(Context);
+  const { nav }: any = useContext(Context);
   return (
     <div>
       {nav === "blog-post" ? (

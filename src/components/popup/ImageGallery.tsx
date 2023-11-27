@@ -78,7 +78,7 @@ const ImageGallery = () => {
         gallery.addEventListener("click", () => {
           setView(true);
           let mfpHideItem = gallery.getElementsByClassName("mfp-hide")[0];
-          let img = mfpHideItem.getElementsByTagName("a");
+          let img: any = mfpHideItem.getElementsByTagName("a");
           setImgContainer(img);
         });
       }

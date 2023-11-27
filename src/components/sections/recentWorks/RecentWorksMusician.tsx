@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const RecentWorksMusician = () => {
   // Isotope
-  const isotope = useRef();
+  const isotope: any = useRef();
   const [filterKey, setFilterKey] = useState("*");
   useEffect(() => {
     setTimeout(() => {

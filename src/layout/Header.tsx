@@ -11,7 +11,7 @@ const headerMenus = [
 ];
 
 const Header = ({ noSideBarBtn, menus, animationText }: any) => {
-  const { changeNav, nav, changeSideBar } = useContext(Context);
+  const { changeNav, nav, changeSideBar }: any = useContext(Context);
   useEffect(() => {
     const sctionScroll = () => {};
     window.addEventListener("scroll", sctionScroll);

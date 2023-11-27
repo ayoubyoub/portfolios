@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Context from "../../context/context";
 
 const BlogSection = () => {
-  const { changeNav } = useContext(Context);
+  const { changeNav }: any = useContext(Context);
   return (
     <div>
       <div className="content blog">
