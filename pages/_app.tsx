@@ -4,6 +4,7 @@ import Head from "next/head";
 import State from "../src/context/state";
 import PreLoader from "../src/layout/PreLoader";
 import "../styles/globals.css";
+
 function MyApp({ Component, pageProps }) {
   return (
     <State>
