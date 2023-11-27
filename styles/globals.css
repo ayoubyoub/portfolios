@@ -7,28 +7,23 @@
 html {
   scroll-behavior: smooth;
 }
-
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
   background-color: transparent;
 }
-
 ::-webkit-scrollbar {
   width: 6px;
   background-color: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
-
 /* image popup */
 img.mfp-img {
   box-shadow: 0 0 8px rgb(0 0 0 / 60%);
   position: absolute;
-  /* max-height: 392px; */
   width: 100%;
   padding: 0 !important;
   top: 50%;
@@ -42,15 +37,11 @@ img.mfp-img {
   top: -110px;
   right: -24px;
 }
-/* .mfp-content {
-  height: 100%;
-} */
 .mfp-bottom-bar {
   top: unset;
   bottom: 14px;
   right: 0;
 }
-
 .mfp-wrap {
   position: unset;
 }
