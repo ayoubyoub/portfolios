@@ -13,12 +13,14 @@
     "font-awesome": "^4.7.0",
     "isotope-layout": "^3.0.6",
     "next": "12.2.5",
+    "next-pwa": "^5.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "swiper": "^8.3.2",
     "typed.js": "^2.0.12"
   },
   "devDependencies": {
+    "@types/isotope-layout": "^3.0.12",
     "@types/node": "^20.10.0",
     "@types/react": "^18.2.39",
     "eslint": "8.22.0",

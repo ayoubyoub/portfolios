@@ -13,12 +13,12 @@ const RecentWorksWritter = () => {
         percentPosition: true,
         masonry: {
           columnWidth: ".grid-item",
-        },
+        }/* ,
         animationOptions: {
           duration: 750,
           easing: "linear",
           queue: false,
-        },
+        }, */
       });
     }, 1000);
     //     return () => isotope.current.destroy();
@@ -30,10 +30,10 @@ const RecentWorksWritter = () => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
-  const handleFilterKeyChange = (key) => () => {
+  const handleFilterKeyChange = (key: any) => () => {
     setFilterKey(key);
   };
-  const activeBtn = (value) => (value === filterKey ? "active" : "");
+  const activeBtn = (value: any) => (value === filterKey ? "active" : "");
 
   return (
     <div>
@@ -103,15 +103,15 @@ const RecentWorksWritter = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/wwork1.jpg" className="has-popup-image">
-                  <img src="images/wwork1.jpg" alt="" />
+                <a href="/assets/images/wwork1.jpg" className="has-popup-image">
+                  <img src="/assets/images/wwork1.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
                 </a>
               </div>
               <div className="desc">
-                <a href="images/wwork1.jpg" className="name has-popup-image">
+                <a href="/assets/images/wwork1.jpg" className="name has-popup-image">
                   Best Resumes Writing
                 </a>
                 <div className="category">Image</div>
@@ -126,7 +126,7 @@ const RecentWorksWritter = () => {
                   href="https://vimeo.com/97102654"
                   className="has-popup-video"
                 >
-                  <img src="images/wwork2.jpg" alt="" />
+                  <img src="/assets/images/wwork2.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-videocamera" />
                   </span>
@@ -151,7 +151,7 @@ const RecentWorksWritter = () => {
                   href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
                   className="has-popup-music"
                 >
-                  <img src="images/wwork3.jpg" alt="" />
+                  <img src="/assets/images/wwork3.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-music-note" />
                   </span>
@@ -170,7 +170,7 @@ const RecentWorksWritter = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/wwork4.jpg" alt="" />
+                  <img src="/assets/images/wwork4.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -178,7 +178,7 @@ const RecentWorksWritter = () => {
                 <div id="popup-1" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/wwork4.jpg" alt="" />
+                      <img src="/assets/images/wwork4.jpg" alt="" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -248,14 +248,14 @@ const RecentWorksWritter = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#gallery-1" className="has-popup-gallery">
-                  <img src="images/wwork5.jpg" alt="" />
+                  <img src="/assets/images/wwork5.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>{" "}
                   <div id="gallery-1" className="mfp-hide">
-                    <a href="images/wwork6.jpg" />
-                    <a href="images/wwork1.jpg" />
-                    <a href="images/wwork5.jpg" />
+                    <a href="/assets/images/wwork6.jpg" />
+                    <a href="/assets/images/wwork1.jpg" />
+                    <a href="/assets/images/wwork5.jpg" />
                   </div>
                 </a>
               </div>
@@ -275,7 +275,7 @@ const RecentWorksWritter = () => {
                   href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
                   className="has-popup-music"
                 >
-                  <img src="images/wwork6.jpg" alt="" />
+                  <img src="/assets/images/wwork6.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-music-note" />
                   </span>

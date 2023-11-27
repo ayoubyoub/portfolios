@@ -4,7 +4,7 @@ const bio_ = `<p>
 I am a software developer originally from South Africa.
 I have been working in the industry for over 15 years and currently specialise in mobile development.
 </p>`;
-const AboutMe = ({ bio }) => {
+const AboutMe = ({ bio }: any) => {
   return (
     <div>
       <div className="content about">

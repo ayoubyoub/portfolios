@@ -6,7 +6,7 @@ const type = {
   SIDEBAR: "SIDEBAR",
 };
 
-const navReducer = (state, action) => {
+const navReducer = (state: any, action: any) => {
   switch (action.type) {
     case type.NAV:
       return {
@@ -24,20 +24,20 @@ const navReducer = (state, action) => {
   }
 };
 
-const State = (props) => {
+const State = (props: any) => {
   const initialState = {
     nav: "about",
     sidebar: false,
   };
   const [state, dispatch] = useReducer(navReducer, initialState);
 
-  const changeNav = (value) => {
+  const changeNav = (value: any) => {
     dispatch({
       type: type.NAV,
       payload: value,
     });
   };
-  const changeSideBar = (value) => {
+  const changeSideBar = (value: any) => {
     dispatch({
       type: type.SIDEBAR,
       payload: value,

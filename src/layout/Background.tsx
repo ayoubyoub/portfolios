@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Background = ({ bg, img }) => {
+const Background = ({ bg, img }: any) => {
   switch (bg) {
     case "blured":
       return <BackgroundBlured />;
@@ -62,7 +62,7 @@ const BackgroundGradient = () => {
   );
 };
 
-const BackgroundImg = ({ img }) => {
+const BackgroundImg = ({ img }: any) => {
   return (
     <div className="background" style={{ backgroundImage: `url(${img})` }} />
   );

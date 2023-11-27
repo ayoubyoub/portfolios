@@ -35,7 +35,7 @@ const Services = ({ serviceList }: any) => {
         {/* content */}
         <div className="row service-items border-line-v">
           {/* service item */}
-          {services.map((service, i) => (
+          {services.map((service: any, i: any) => (
             <div key={i} className="col col-d-6 col-t-6 col-m-12 border-line-h">
               <div className="service-item">
                 <div className="icon">

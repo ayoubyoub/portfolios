@@ -12,12 +12,12 @@ const RecentWorksDefault = () => {
         percentPosition: true,
         masonry: {
           columnWidth: ".grid-item",
-        },
+        }/* ,
         animationOptions: {
           duration: 750,
           easing: "linear",
           queue: false,
-        },
+        }, */
       });
     }, 1000);
     //     return () => isotope.current.destroy();
@@ -29,10 +29,10 @@ const RecentWorksDefault = () => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
-  const handleFilterKeyChange = (key) => () => {
+  const handleFilterKeyChange = (key: any) => () => {
     setFilterKey(key);
   };
-  const activeBtn = (value) => (value === filterKey ? "active" : "");
+  const activeBtn = (value: any) => (value === filterKey ? "active" : "");
 
   return (
     <div>
@@ -107,7 +107,7 @@ const RecentWorksDefault = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-2" className="has-popup-media">
-                  <img src="images/works/Build a Bike Product Images.jpg" alt="Build a Bike" />
+                  <img src="/assets/images/works/Build a Bike Product Images.jpg" alt="Build a Bike" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -115,7 +115,7 @@ const RecentWorksDefault = () => {
                 <div id="popup-2" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/Build a Bike Product Images.jpg" alt="Build a Bike" />
+                      <img src="/assets/images/works/Build a Bike Product Images.jpg" alt="Build a Bike" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -149,7 +149,7 @@ const RecentWorksDefault = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/works/onedaybargain.png" alt="One Day Bargain" />
+                  <img src="/assets/images/works/onedaybargain.png" alt="One Day Bargain" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -157,7 +157,7 @@ const RecentWorksDefault = () => {
                 <div id="popup-1" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/onedaybargain.png" alt="One Day Bargain" />
+                      <img src="/assets/images/works/onedaybargain.png" alt="One Day Bargain" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -193,7 +193,7 @@ const RecentWorksDefault = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/works/Facebook - ULTRA BIKE.jpg" alt="ULTRA BIKE" />
+                  <img src="/assets/images/works/Facebook - ULTRA BIKE.jpg" alt="ULTRA BIKE" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -201,7 +201,7 @@ const RecentWorksDefault = () => {
                 <div id="popup-1" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/ultrabike-website.png" alt="ULTRA BIKE" />
+                      <img src="/assets/images/works/ultrabike-website.png" alt="ULTRA BIKE" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -227,7 +227,7 @@ const RecentWorksDefault = () => {
                                   </div>
                                   <div className="user">
                                     <div className="img">
-                                      <img src="images/avatar.png" alt="Edward Whitehead" />
+                                      <img src="/assets/images/avatar.png" alt="Edward Whitehead" />
                                     </div>
                                     <div className="info">
                                       <div className="name">Edward Whitehead</div>
@@ -270,7 +270,7 @@ const RecentWorksDefault = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-2" className="has-popup-media">
-                  <img src="images/works/nouveau.png" alt="NOUVEAU" />
+                  <img src="/assets/images/works/nouveau.png" alt="NOUVEAU" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -278,7 +278,7 @@ const RecentWorksDefault = () => {
                 <div id="popup-2" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/nouveau.png" alt="NOUVEAU" />
+                      <img src="/assets/images/works/nouveau.png" alt="NOUVEAU" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -318,7 +318,7 @@ const RecentWorksDefault = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/works/Comic Con.png" alt="COMIC CON AFRICA" />
+                  <img src="/assets/images/works/Comic Con.png" alt="COMIC CON AFRICA" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -326,7 +326,7 @@ const RecentWorksDefault = () => {
                 <div id="popup-2" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/Comic Con.png" alt="COMIC CON AFRICA" />
+                      <img src="/assets/images/works/Comic Con.png" alt="COMIC CON AFRICA" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -372,7 +372,7 @@ const RecentWorksDefault = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/works/foodtruckfridays.png" alt="Food Truck Fridays" />
+                  <img src="/assets/images/works/foodtruckfridays.png" alt="Food Truck Fridays" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -380,7 +380,7 @@ const RecentWorksDefault = () => {
                 <div id="popup-2" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/foodtruckfridays1.jpg" alt="Food Truck Fridays" />
+                      <img src="/assets/images/works/foodtruckfridays1.jpg" alt="Food Truck Fridays" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -420,7 +420,7 @@ const RecentWorksDefault = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/works/paybee.png" alt="" />
+                  <img src="/assets/images/works/paybee.png" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -428,7 +428,7 @@ const RecentWorksDefault = () => {
                 <div id="popup-2" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/paybee-mixed.png" alt="" />
+                      <img src="/assets/images/works/paybee-mixed.png" alt="" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -470,8 +470,8 @@ const RecentWorksDefault = () => {
           {/* <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/works/Build a Bike Product Images.jpg" className="has-popup-image">
-                  <img src="images/works/Build a Bike Product Images.jpg" alt="" />
+                <a href="/assets/images/works/Build a Bike Product Images.jpg" className="has-popup-image">
+                  <img src="/assets/images/works/Build a Bike Product Images.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
@@ -479,7 +479,7 @@ const RecentWorksDefault = () => {
               </div>
               <div className="desc">
                 <a
-                  href="images/works/Build a Bike Product Images.jpg"
+                  href="/assets/images/works/Build a Bike Product Images.jpg"
                   className="name has-popup-media"
                 >
                   Buuild a Bike
@@ -497,7 +497,7 @@ const RecentWorksDefault = () => {
                   href="https://www.youtube.com/embed/mkjwxmcdb0E"
                   className="has-popup-video"
                 >
-                  <img src="images/works/work2.jpg" alt="" />
+                  <img src="/assets/images/works/work2.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-videocamera" />
                   </span>
@@ -523,7 +523,7 @@ const RecentWorksDefault = () => {
                   href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
                   className="has-popup-music"
                 >
-                  <img src="images/works/work3.jpg" alt="" />
+                  <img src="/assets/images/works/work3.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-music-note" />
                   </span>
@@ -543,14 +543,14 @@ const RecentWorksDefault = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#gallery-1" className="has-popup-gallery img-gallery">
-                  <img src="images/works/work5.jpg" alt="" />
+                  <img src="/assets/images/works/work5.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
                   <div id="gallery-1" className="mfp-hide">
-                    <a href="images/works/work5.jpg" />
-                    <a href="images/works/work1.jpg" />
-                    <a href="images/works/work6.jpg" />
+                    <a href="/assets/images/works/work5.jpg" />
+                    <a href="/assets/images/works/work1.jpg" />
+                    <a href="/assets/images/works/work6.jpg" />
                   </div>
                 </a>
               </div>
@@ -571,7 +571,7 @@ const RecentWorksDefault = () => {
                   href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
                   className="has-popup-music"
                 >
-                  <img src="images/works/work7.jpg" alt="" />
+                  <img src="/assets/images/works/work7.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-music-note" />
                   </span>
@@ -594,7 +594,7 @@ const RecentWorksDefault = () => {
                   href="https://www.youtube.com/embed/mkjwxmcdb0E"
                   className="has-popup-video"
                 >
-                  <img src="images/works/work6.jpg" alt="" />
+                  <img src="/assets/images/works/work6.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-videocamera" />
                   </span>

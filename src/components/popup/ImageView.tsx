@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useClickOutside from "../../useClickOutside";
 
-const ImgViews = ({ close, src }) => {
+const ImgViews = ({ close, src }: any) => {
   let domNode = useClickOutside(() => {
     close(false);
   });
@@ -34,11 +34,11 @@ const ImageView = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      const a = document.querySelectorAll("a");
-      a.forEach((a) => {
+      const a: any = document.querySelectorAll("a");
+      a.forEach((a: any) => {
         if (a.href.includes("/images")) {
           if (a.getAttribute("download") === null) {
-            a.addEventListener("click", (e) => {
+            a.addEventListener("click", (e: any) => {
               e.preventDefault();
               setImgValue(a.href);
               setImg(true);

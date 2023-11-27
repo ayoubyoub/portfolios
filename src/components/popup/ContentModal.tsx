@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useClickOutside from "../../useClickOutside";
-const Content = ({ content, close }) => {
+const Content = ({ content, close }: any) => {
   let domNode = useClickOutside(() => {
     close(false);
   });

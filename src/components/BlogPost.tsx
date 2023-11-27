@@ -37,7 +37,7 @@ const BlogPostNew = () => {
                 </div>
                 {/* blog image */}
                 <div className="blog-image">
-                  <img src="images/blog/blog1.jpg" alt="" />
+                  <img src="/assets/images/blog/blog1.jpg" alt="" />
                 </div>
                 {/* blog content */}
                 <div className="blog-content">
@@ -145,7 +145,7 @@ const BlogPostNew = () => {
                     <div className="comment">
                       <div className="comment-image image">
                         <img
-                          src="images/man1.jpg"
+                          src="/assets/images/man1.jpg"
                           className="avatar"
                           height={80}
                           width={80}
@@ -178,7 +178,7 @@ const BlogPostNew = () => {
                       <div className="comment">
                         <div className="comment-image image">
                           <img
-                            src="images/man1.jpg"
+                            src="/assets/images/man1.jpg"
                             className="avatar"
                             height={80}
                             width={80}
@@ -211,7 +211,7 @@ const BlogPostNew = () => {
                     <div className="comment">
                       <div className="comment-image image">
                         <img
-                          src="images/man1.jpg"
+                          src="/assets/images/man1.jpg"
                           className="avatar"
                           height={80}
                           width={80}
@@ -309,7 +309,7 @@ export const BlogPostClassic = () => {
                 <div className="blog-detail">Posted 12 June 2016</div>
                 {/* blog image */}
                 <div className="blog-image">
-                  <img src="images/blog/blog1.jpg" alt="" />
+                  <img src="/assets/images/blog/blog1.jpg" alt="" />
                 </div>
                 {/* blog content */}
                 <div className="blog-content">
@@ -362,7 +362,7 @@ export const BlogPostClassic = () => {
                   <ul className="post-comments">
                     {/* comment item */}
                     <li>
-                      <img src="images/man1.jpg" alt="" />
+                      <img src="/assets/images/man1.jpg" alt="" />
                       <div className="comment-info">
                         <div className="name">
                           <h6>
@@ -378,7 +378,7 @@ export const BlogPostClassic = () => {
                     </li>
                     {/* comment item */}
                     <li>
-                      <img src="images/man1.jpg" alt="" />
+                      <img src="/assets/images/man1.jpg" alt="" />
                       <div className="comment-info">
                         <div className="name">
                           <h6>
@@ -394,7 +394,7 @@ export const BlogPostClassic = () => {
                     </li>
                     {/* comment item */}
                     <li>
-                      <img src="images/man1.jpg" alt="" />
+                      <img src="/assets/images/man1.jpg" alt="" />
                       <div className="comment-info">
                         <div className="name">
                           <h6>

@@ -13,12 +13,12 @@ const RecentWorksFitness = () => {
         percentPosition: true,
         masonry: {
           columnWidth: ".grid-item",
-        },
+        }/* ,
         animationOptions: {
           duration: 750,
           easing: "linear",
           queue: false,
-        },
+        }, */
       });
     }, 1000);
     //     return () => isotope.current.destroy();
@@ -30,10 +30,10 @@ const RecentWorksFitness = () => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
-  const handleFilterKeyChange = (key) => () => {
+  const handleFilterKeyChange = (key: any) => () => {
     setFilterKey(key);
   };
-  const activeBtn = (value) => (value === filterKey ? "active" : "");
+  const activeBtn = (value: any) => (value === filterKey ? "active" : "");
 
   return (
     <div>
@@ -85,8 +85,8 @@ const RecentWorksFitness = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/twork1.jpg" className="has-popup-image">
-                  <img src="images/twork1.jpg" alt="" />
+                <a href="/assets/images/twork1.jpg" className="has-popup-image">
+                  <img src="/assets/images/twork1.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
@@ -94,7 +94,7 @@ const RecentWorksFitness = () => {
               </div>
               <div className="desc">
                 <a
-                  href="images/works/work1.jpg"
+                  href="/assets/images/works/work1.jpg"
                   className="name has-popup-image"
                 >
                   Fitness Item 1
@@ -111,7 +111,7 @@ const RecentWorksFitness = () => {
                   href="https://vimeo.com/97102654"
                   className="has-popup-video"
                 >
-                  <img src="images/twork2.jpg" alt="" />
+                  <img src="/assets/images/twork2.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-videocamera" />
                   </span>
@@ -132,8 +132,8 @@ const RecentWorksFitness = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/twork3.jpg" className="has-popup-image">
-                  <img src="images/twork3.jpg" alt="" />
+                <a href="/assets/images/twork3.jpg" className="has-popup-image">
+                  <img src="/assets/images/twork3.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
@@ -141,7 +141,7 @@ const RecentWorksFitness = () => {
               </div>
               <div className="desc">
                 <a
-                  href="images/works/work1.jpg"
+                  href="/assets/images/works/work1.jpg"
                   className="name has-popup-image"
                 >
                   Fitness Item 3
@@ -158,7 +158,7 @@ const RecentWorksFitness = () => {
                   href="https://vimeo.com/97102654"
                   className="has-popup-video"
                 >
-                  <img src="images/twork4.jpg" alt="" />
+                  <img src="/assets/images/twork4.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-videocamera" />
                   </span>
@@ -180,14 +180,14 @@ const RecentWorksFitness = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#gallery-1" className="has-popup-gallery">
-                  <img src="images/twork5.jpg" alt="" />
+                  <img src="/assets/images/twork5.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
                   <div id="gallery-1" className="mfp-hide">
-                    <a href="images/twork3.jpg" />
-                    <a href="images/twork4.jpg" />
-                    <a href="images/twork5.jpg" />
+                    <a href="/assets/images/twork3.jpg" />
+                    <a href="/assets/images/twork4.jpg" />
+                    <a href="/assets/images/twork5.jpg" />
                   </div>
                 </a>
               </div>
@@ -204,14 +204,14 @@ const RecentWorksFitness = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#gallery-2" className="has-popup-gallery">
-                  <img src="images/twork6.jpg" alt="" />
+                  <img src="/assets/images/twork6.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>{" "}
                   <div id="gallery-2" className="mfp-hide">
-                    <a href="images/twork3.jpg" />
-                    <a href="images/twork4.jpg" />
-                    <a href="images/twork6.jpg" />
+                    <a href="/assets/images/twork3.jpg" />
+                    <a href="/assets/images/twork4.jpg" />
+                    <a href="/assets/images/twork6.jpg" />
                   </div>
                 </a>
               </div>

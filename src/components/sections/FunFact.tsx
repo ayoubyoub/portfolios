@@ -110,7 +110,7 @@ export default FunFact;
 //             </div>
 //             <div className="user">
 //               <div className="img">
-//                 <img src="images/profile.png" alt="Ryan Adlard" />
+//                 <img src="/assets/images/profile.png" alt="Ryan Adlard" />
 //               </div>
 //               <div className="info">
 //                 <div className="name">Ryan Adlard</div>

@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 
-let useClickOutside = (handler) => {
+let useClickOutside = (handler: any) => {
   let domNode: any = useRef();
 
   useEffect(() => {
-    let maybeHandler = (event) => {
+    let maybeHandler = (event: any) => {
       if (!domNode.current.contains(event.target)) {
         handler();
       }

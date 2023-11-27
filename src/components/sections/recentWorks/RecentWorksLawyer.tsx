@@ -13,12 +13,12 @@ const RecentWorksLawyer = () => {
         percentPosition: true,
         masonry: {
           columnWidth: ".grid-item",
-        },
+        }/* ,
         animationOptions: {
           duration: 750,
           easing: "linear",
           queue: false,
-        },
+        }, */
       });
     }, 1000);
     //     return () => isotope.current.destroy();
@@ -30,10 +30,10 @@ const RecentWorksLawyer = () => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
-  const handleFilterKeyChange = (key) => () => {
+  const handleFilterKeyChange = (key: any) => () => {
     setFilterKey(key);
   };
-  const activeBtn = (value) => (value === filterKey ? "active" : "");
+  const activeBtn = (value: any) => (value === filterKey ? "active" : "");
 
   return (
     <div>
@@ -103,15 +103,15 @@ const RecentWorksLawyer = () => {
           <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
             <div className="box-item">
               <div className="image">
-                <a href="images/lwork1.jpg" className="has-popup-image">
-                  <img src="images/lwork1.jpg" alt="" />
+                <a href="/assets/images/lwork1.jpg" className="has-popup-image">
+                  <img src="/assets/images/lwork1.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-image" />
                   </span>
                 </a>
               </div>
               <div className="desc">
-                <a href="images/lwork1.jpg" className="name has-popup-image">
+                <a href="/assets/images/lwork1.jpg" className="name has-popup-image">
                   Privacy Law Firm
                 </a>
                 <div className="category">Image</div>
@@ -126,7 +126,7 @@ const RecentWorksLawyer = () => {
                   href="https://vimeo.com/97102654"
                   className="has-popup-video"
                 >
-                  <img src="images/lwork2.jpg" alt="" />
+                  <img src="/assets/images/lwork2.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-videocamera" />
                   </span>
@@ -151,7 +151,7 @@ const RecentWorksLawyer = () => {
                   href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
                   className="has-popup-music"
                 >
-                  <img src="images/lwork3.jpg" alt="" />
+                  <img src="/assets/images/lwork3.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-music-note" />
                   </span>
@@ -170,7 +170,7 @@ const RecentWorksLawyer = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/lwork4.jpg" alt="" />
+                  <img src="/assets/images/lwork4.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -178,7 +178,7 @@ const RecentWorksLawyer = () => {
                 <div id="popup-1" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/lwork4.jpg" alt="" />
+                      <img src="/assets/images/lwork4.jpg" alt="" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -248,19 +248,19 @@ const RecentWorksLawyer = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#gallery-1" className="has-popup-gallery">
-                  <img src="images/lwork5.jpg" alt="" />
+                  <img src="/assets/images/lwork5.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>{" "}
                   <div id="gallery-1" className="mfp-hide">
-                    <a href="images/lwork6.jpg" />
-                    <a href="images/lwork1.jpg" />
-                    <a href="images/lork5.jpg" />
+                    <a href="/assets/images/lwork6.jpg" />
+                    <a href="/assets/images/lwork1.jpg" />
+                    <a href="/assets/images/lork5.jpg" />
                   </div>
                 </a>
               </div>
               <div className="desc">
-                <a href="images/lwork5.jpg" className="name has-popup-image">
+                <a href="/assets/images/lwork5.jpg" className="name has-popup-image">
                   List of Criminal Charges
                 </a>
                 <div className="category">Gallery</div>
@@ -275,7 +275,7 @@ const RecentWorksLawyer = () => {
                   href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
                   className="has-popup-music"
                 >
-                  <img src="images/lwork6.jpg" alt="" />
+                  <img src="/assets/images/lwork6.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-music-note" />
                   </span>

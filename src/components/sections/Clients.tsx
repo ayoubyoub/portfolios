@@ -16,7 +16,7 @@ const Clients = () => {
                   rel="noreferrer"
                   href="https://www.google.com"
                 >
-                  <img src="images/clients/client_1.png" alt="" />
+                  <img src="/assets/images/clients/client_1.png" alt="" />
                 </a>
               </div>
             </div>
@@ -30,7 +30,7 @@ const Clients = () => {
                   rel="noreferrer"
                   href="https://www.google.com"
                 >
-                  <img src="images/clients/client_2.png" alt="" />
+                  <img src="/assets/images/clients/client_2.png" alt="" />
                 </a>
               </div>
             </div>
@@ -44,7 +44,7 @@ const Clients = () => {
                   rel="noreferrer"
                   href="https://www.google.com"
                 >
-                  <img src="images/clients/client_3.png" alt="" />
+                  <img src="/assets/images/clients/client_3.png" alt="" />
                 </a>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Clients = () => {
                   rel="noreferrer"
                   href="https://www.google.com"
                 >
-                  <img src="images/clients/client_4.png" alt="" />
+                  <img src="/assets/images/clients/client_4.png" alt="" />
                 </a>
               </div>
             </div>

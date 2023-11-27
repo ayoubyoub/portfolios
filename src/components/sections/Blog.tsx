@@ -18,7 +18,7 @@ const BlogSection = () => {
               <div className="image">
                 <a href="#" onClick={() => changeNav("blog-post")}>
                   <img
-                    src="images/blog/blog1.jpg"
+                    src="/assets/images/blog/blog1.jpg"
                     alt="By spite about do of allow"
                   />
                   <span className="info">
@@ -53,7 +53,7 @@ const BlogSection = () => {
               <div className="image">
                 <a href="#" onClick={() => changeNav("blog-post")}>
                   <img
-                    src="images/blog/blog2.jpg"
+                    src="/assets/images/blog/blog2.jpg"
                     alt="By spite about do of allow"
                   />
                   <span className="info">
@@ -88,7 +88,7 @@ const BlogSection = () => {
               <div className="image">
                 <a href="#" onClick={() => changeNav("blog-post")}>
                   <img
-                    src="images/blog/blog3.jpg"
+                    src="/assets/images/blog/blog3.jpg"
                     alt="By spite about do of allow"
                   />
                   <span className="info">
@@ -123,7 +123,7 @@ const BlogSection = () => {
               <div className="image">
                 <a href="#" onClick={() => changeNav("blog-post")}>
                   <img
-                    src="images/blog/blog1.jpg"
+                    src="/assets/images/blog/blog1.jpg"
                     alt="By spite about do of allow"
                   />
                   <span className="info">
@@ -187,7 +187,7 @@ export default BlogSection;
 //             <div className="box-item">
 //               <div className="image">
 //                 <a href="#" onClick={() => changeNav("blog-post")}>
-//                   <img src="images/blog/blog1.jpg" alt="" />
+//                   <img src="/assets/images/blog/blog1.jpg" alt="" />
 //                   <span className="info">
 //                     <span className="ion ion-document-text" />
 //                   </span>
@@ -213,7 +213,7 @@ export default BlogSection;
 //             <div className="box-item">
 //               <div className="image">
 //                 <a href="#" onClick={() => changeNav("blog-post")}>
-//                   <img src="images/blog/blog2.jpg" alt="" />
+//                   <img src="/assets/images/blog/blog2.jpg" alt="" />
 //                   <span className="info">
 //                     <span className="ion ion-document-text" />
 //                   </span>
@@ -239,7 +239,7 @@ export default BlogSection;
 //             <div className="box-item">
 //               <div className="image">
 //                 <a href="#" onClick={() => changeNav("blog-post")}>
-//                   <img src="images/blog/blog3.jpg" alt="" />
+//                   <img src="/assets/images/blog/blog3.jpg" alt="" />
 //                   <span className="info">
 //                     <span className="ion ion-document-text" />
 //                   </span>

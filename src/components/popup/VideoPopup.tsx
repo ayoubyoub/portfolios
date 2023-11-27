@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useClickOutside from "../../useClickOutside";
 
-const VideoPopup_ = ({ close, videoID }) => {
+const VideoPopup_ = ({ close, videoID }: any) => {
   let domNode = useClickOutside(() => {
     close(false);
   });
@@ -45,14 +45,14 @@ const VideoPopup = () => {
   const [videoValue, setVideoValue] = useState(null);
   useEffect(() => {
     setTimeout(() => {
-      const a = document.querySelectorAll("a");
-      a.forEach((a) => {
+      const a: any = document.querySelectorAll("a");
+      a.forEach((a: any) => {
         if (
           a.href.includes("www.youtube.com") ||
           a.href.includes("vimeo.com") ||
           a.href.includes("soundcloud.com")
         ) {
-          a.addEventListener("click", (e) => {
+          a.addEventListener("click", (e: any) => {
             e.preventDefault();
             setVideoValue(a.href);
             setVideo(true);

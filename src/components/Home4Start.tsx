@@ -20,7 +20,7 @@ Profile
           {/* profile image */}
           <div
             className="slide"
-            style={{ backgroundImage: "url(images/profile3.jpg)" }}
+            style={{ backgroundImage: "url(/assets/images/profile3.jpg)" }}
           />
           {/* profile titles */}
           <div className="title">Jason Allen</div>

@@ -36,7 +36,7 @@ const Header = ({ noSideBarBtn, menus, animationText }: any) => {
       {/* menu */}
       <div className="top-menu menu-minimal">
         <ul>
-          {headerMenus_.map((menu, i) => (
+          {headerMenus_.map((menu: any, i: any) => (
             <li className={`${nav === menu.link ? "active" : ""}`} key={i}>
               <a href={`#${menu.link}`} onClick={() => changeNav(menu.link)}>
                 <span className={menu.icon} />

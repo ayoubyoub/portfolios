@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import Context from "./context/context";
 import useWindowSize from "./useWindowSize";
-const ActiveSection = (active, animationIn, animationOut) => {
+
+const ActiveSection = (active: any, animationIn: any, animationOut: any): any => {
   const { nav }: any = useContext(Context);
   const { width } = useWindowSize();
   return `card-inner ${
@@ -16,4 +17,5 @@ const ActiveSection = (active, animationIn, animationOut) => {
       : ""
   }`;
 };
+
 export default ActiveSection;

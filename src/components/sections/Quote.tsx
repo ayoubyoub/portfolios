@@ -19,7 +19,7 @@ const Quote = () => {
               </div>
               <div className="user">
                 <div className="img">
-                  <img src="images/avatar.png" alt="Edward Whitehead" />
+                  <img src="/assets/images/avatar.png" alt="Edward Whitehead" />
                 </div>
                 <div className="info">
                   <div className="name">Edward Whitehead</div>

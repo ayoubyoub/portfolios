@@ -13,12 +13,12 @@ const RecentWorksMusician = () => {
         percentPosition: true,
         masonry: {
           columnWidth: ".grid-item",
-        },
+        }/* ,
         animationOptions: {
           duration: 750,
           easing: "linear",
           queue: false,
-        },
+        }, */
       });
     }, 1000);
     //     return () => isotope.current.destroy();
@@ -30,10 +30,10 @@ const RecentWorksMusician = () => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
-  const handleFilterKeyChange = (key) => () => {
+  const handleFilterKeyChange = (key: any) => () => {
     setFilterKey(key);
   };
-  const activeBtn = (value) => (value === filterKey ? "active" : "");
+  const activeBtn = (value: any) => (value === filterKey ? "active" : "");
 
   return (
     <div>
@@ -89,7 +89,7 @@ const RecentWorksMusician = () => {
                   href="https://vimeo.com/97102654"
                   className="has-popup-video"
                 >
-                  <img src="images/mwork1.jpg" alt="" />
+                  <img src="/assets/images/mwork1.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-videocamera" />
                   </span>
@@ -114,7 +114,7 @@ const RecentWorksMusician = () => {
                   href="https://vimeo.com/97102654"
                   className="has-popup-video"
                 >
-                  <img src="images/mwork2.jpg" alt="" />
+                  <img src="/assets/images/mwork2.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-videocamera" />
                   </span>
@@ -139,7 +139,7 @@ const RecentWorksMusician = () => {
                   href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
                   className="has-popup-music"
                 >
-                  <img src="images/mwork3.jpg" alt="" />
+                  <img src="/assets/images/mwork3.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-music-note" />
                   </span>
@@ -158,7 +158,7 @@ const RecentWorksMusician = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/mwork4.jpg" alt="" />
+                  <img src="/assets/images/mwork4.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -166,7 +166,7 @@ const RecentWorksMusician = () => {
                 <div id="popup-1" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/mwork4.jpg" alt="" />
+                      <img src="/assets/images/mwork4.jpg" alt="" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -239,7 +239,7 @@ const RecentWorksMusician = () => {
                   href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
                   className="has-popup-music"
                 >
-                  <img src="images/mwork5.jpg" alt="" />
+                  <img src="/assets/images/mwork5.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-music-note" />
                   </span>
@@ -261,7 +261,7 @@ const RecentWorksMusician = () => {
                   href="https://vimeo.com/97102654"
                   className="has-popup-video"
                 >
-                  <img src="images/mwork6.jpg" alt="" />
+                  <img src="/assets/images/mwork6.jpg" alt="" />
                   <span className="info">
                     <span className="ion ion-videocamera" />
                   </span>

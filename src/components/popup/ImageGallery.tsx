@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-const ImgView = ({ close, imgs }) => {
+const ImgView = ({ close, imgs }: any) => {
   const images =
     imgs.length > 0
       ? imgs
       : [
-          "images/works/work6.jpg",
-          "images/works/work1.jpg",
-          "images/works/work5.jpg",
+          "/assets/images/works/work6.jpg",
+          "/assets/images/works/work1.jpg",
+          "/assets/images/works/work5.jpg",
         ];
   const [photoIndex, setPhotoIndex] = useState(0);
 
